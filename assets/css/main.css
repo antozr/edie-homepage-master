@@ -34,15 +34,93 @@ body{
     flex-direction: column;
     justify-content: space-around;
     margin: 6px 0 0 0 ;
+
+}
+.head__menu--click{
+    position: fixed;
+    z-index: 22;
+    right: 17px;
 }
 .head__menuBar{
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background-color: #333333;
+    background-color: #100E1D;
+    transition: 0.3s;
+    
+}
+.head__menuBar--click{
+    
+    background-color: #f2f2f2;
+    transition: 0.3s;
+    
+}
+.head__menuBar--click:nth-child(1){
+    transform: rotateZ(45deg) translateY(7px);
+    transition: 0.3s;
+}
+.head__menuBar--click:nth-child(2){
+    transform: scale(0);
+    transition: 0.3s;
+}
+.head__menuBar--click:nth-child(3){
+    transform: rotateZ(-45deg) translateY(-7px);
+    transition: 0.3s;
+}
+.head__nav{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    left:0px;
+    background-color: #100E1D;
+    overflow-y: hidden;
+    transition: 0.3s;
+    transform: translateX(100vw) ;
+    
+}
+.head__nav--click{
+    display: block;
+    animation: moveMenu 0.6s ease-in;
+    transform: translateX(0vw) ;
 }
 
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    margin: 136px 41px;
+    width: 60vw;
+    height: 60vh;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav__el{
+    margin: 8px 0;
+    width: 80vw;
 
+}
+.nav__lien{
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    padding: 0 30vw 0 0 ;
+    cursor: pointer;
+    width: 80vw;
+
+}
+.nav__lien:hover{
+    background-color: #f2f2f210;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
 .main{
     width: calc(100vw - 27px);
     padding: 0 17px 0 10px;
@@ -170,7 +248,14 @@ body{
     width: 100%;
     
 }
-
+/*.cont::before{
+    display: block;
+    content: " ";
+    width: 20px;
+    height: 202px;
+    margin: -102px;
+    visibility: hidden;
+}*/
 .cont--1{
     margin: 48px 0 0 0 ;
     padding: 0 0 0 30px;
@@ -488,5 +573,20 @@ body{
     }
     to{
         transform: translateX(80px);
+    }
+}@keyframes moveMenu {
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(0vw);
+    }
+}
+@keyframes moveMenuOff {
+    from{
+        transform: translateX(0vw);
+    }
+    to{
+        transform: translateX(100vw);
     }
 }
