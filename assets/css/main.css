@@ -356,6 +356,11 @@ body{
     transform: translateX(80px);
 }
 /* the box pack */
+.cont__listPack{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
 .cont__boxPack{
     width: calc(100% - 34px);
     height: 330px;
@@ -411,7 +416,15 @@ body{
 .cont__boxProjet{
     width: 100%;
     height: 410px;
-    
+    transition: 0.3s;
+}
+.cont__boxProjet:hover{
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    transition: 0.3s;
+}
+.cont__boxProjet:hover > h3, .cont__boxProjet:hover > p{
+    margin: 0 0 0 10px;
+    transition: 0.3s;
 }
 .cont__boxProjet:nth-child(2){
     margin: 48px 0 0 0;
@@ -566,6 +579,312 @@ body{
 .foot__boxMail{
     margin: 64px 0 0 0;
 }
+
+
+
+/* IPAD size */
+
+@media(min-width:1100px){
+
+    .head__txt{
+        font-size: 36px;
+    }
+    .head__menu{
+        display: none;
+    }
+    .head__nav{
+        display: block;
+        min-width:610px ;
+        width: 80vw;
+        max-width: 710px;
+        height: 53px;
+        background-color: #fff;
+        position: relative;
+        transform: translateX(0vw) ;
+        right: 17px;
+        margin: 9px 0 0 0;
+    }
+    .nav__list{
+        flex-direction: row;
+        height: 53px;
+        margin: 0;
+        width: 100%;
+
+    }
+    .nav__el{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .nav__lien{
+        color: #100E1D;
+        padding: 0;
+        width: auto;
+    }
+    .nav__lien:hover{
+        background-color: #f2f2f210;
+        font-weight: 600;
+        padding: 0px;
+        transition: 0s;
+        border-radius: 12px;
+    }
+    /* the font */
+    .cont__txt{
+        font-size: 18px;
+        width: 36ch;
+    }
+    .cont__txt--pack{
+        width: 25ch;
+    }
+
+
+    .cont__title{
+        font-size: 48px;
+        width: 18ch;
+        margin: 16px 0 0 0 ;
+    }
+    .cont__title--2{
+        margin: 42px 0 0 0 ;
+        width: 13ch;
+    }
+
+    .cont__label{
+        font-size: 14px;
+    }
+    /* the section */
+    .cont--1{
+        margin: 104px 0 0 0 ;
+        padding: 0 0 0 19.5vw;
+        width: calc(100% - 20vw);
+        height: 1000px;
+    
+    }
+
+    .cont__img{
+        width: calc(100% + 19vw );
+        border-radius:12px ;
+        height: 354px;
+        margin: 42px 0 0 -18.6vw;
+        object-fit: cover;
+    }
+
+    .cont__boxMail{
+        height: 68px;
+        width: 360px;
+        margin: 42px 0 0 0 ;
+    }
+    .cont__input{
+
+        height: 57px;
+        width: 40vw;
+        min-width: 310px;
+        max-width: 342px;
+        font-size: 18px;
+        padding: 0 0 0 19px;
+        margin: 6px 0 0 0;
+        
+    }
+    .cont__subInput{
+        font-size: 18px;
+        width: 94px;
+        height: 5vh;
+        top: 6px ;
+        margin: 6px 0;
+        right: 72px;
+    }
+
+    .cont__title--pack{
+        width: 10ch;
+        font-size: 24px;
+    }
+    /* the box pack */
+
+    .cont__title--headPack{
+        margin: 0 0 0 5vw;
+        line-height: 160%;
+        width:13ch;
+        font-size: 36px;
+    }
+    .cont--2{
+        margin: 224px 0 0 0 ;
+        padding: 0 0 0 9.8vw;
+        width: calc(100% - 10.2vw);
+        
+    }
+    
+    .cont__listPack{
+        flex-direction: row;
+        margin: 42px 0 0 10vw;
+        max-width: 1100px;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .cont__boxPack{
+        width: 308px;
+        cursor: pointer;
+        
+    }
+    .cont__btnpack{
+        
+        font-size: 16px;
+    }
+
+    /* projects*/
+    .cont--3{
+        margin: 204px 0 0 0;
+        padding: 0 0 0 9.8vw;
+        width: calc(100% - 10.2vw);
+        position: relative;
+    }
+    .cont__listProject{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 12px 0 0 5vw;
+        max-width: 1520px;
+        width: 80%;
+    }
+    .cont__boxProjet{
+       
+        max-width: 545px;
+        height: 650px;
+        border-radius: 24px;
+        margin: 140px 0 0 0;
+    }
+    .cont__boxProjet:nth-child(1n+2){
+        margin: 140px 0 0 0;
+    }
+    .cont__boxProjet:nth-child(2n+2){
+        margin: 0px 0 0 2vw;
+        
+    }
+    .cont__title--project{
+        font-size: 24px;
+        width: 22ch;
+    }
+    .projet__img{
+        height: 545px;
+    }
+    .cont__seeMore{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        height: 27px;
+        width: 110px;
+        margin: -42px 0 0 0;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+        right: -70vw;
+    }
+
+    /*contact*/
+    .cont--contactRow{
+        display: flex;
+        flex-direction: row;
+        margin: 380px 0 0 5vw;
+    }
+    .cont__title--big{
+        font-size: 36px;
+        width: 13ch;
+        margin: 7px 0 0 0 ;
+    }
+    .cont__txt--SouTitre{
+        font-size: 16px;
+        margin: 14px 0 0 0 ;
+        width: 25ch;
+    }
+
+    /* the state box images */ 
+
+    .cont__boxImg{
+
+        width: 100%;
+        max-width: 650px;
+        height: 580px;
+        display: grid;
+        grid-template-columns:320px 300px ;
+        column-gap: 24px;
+        grid-template-rows:260px 300px ;
+        row-gap: 24px;
+        grid-template-areas:
+        "i1 i2"
+        "i1 i3" ;
+        margin: -136px 0 0 0 ;
+    }
+    .cont__imgTrio{
+        border-radius: 24px;
+        width: 260px;
+        height: 260px;
+        margin: 9px 0 0 0px;
+    }
+    .cont__imgTrio:nth-child(1){
+        margin: 64px 0 0 0 ;
+        height: 320px;
+        width: 320px;
+        grid-area: i1;
+
+    }
+    .cont__imgTrio:nth-child(2){
+        grid-area: i2;
+    }
+    .cont__imgTrio:nth-child(3){
+        grid-area: i3;
+        height: 300px;
+        width: 300px;
+    }
+    .cont__boxPerso{
+        height: 82px;
+        width: 60%;
+        display: grid;
+        grid-template-columns:82px 200px ;
+        column-gap: 30px;
+        grid-template-rows:36px 30px ;
+        row-gap: 12px;
+        grid-template-areas:
+        "a1 t1"
+        "a1 t2" ;
+        margin: 45px 0 0 5vw;
+    }
+    .cont__return{
+        font-size: 36px;
+        margin: 196px 0 0 5vw ;
+        width: 40ch;
+    }
+    .cont__title--boxPerso{
+        grid-area: t1;
+        margin: 0px 0 0 0;
+        width: 12ch;
+        font-size: 24px;
+    }
+
+    /* foot */
+
+    .foot{
+        width: calc(100% - 82px );
+        height: 385px;
+    }
+    .foot__row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .foot__boxRs{
+        margin: 6px 0 0 0 ;
+        width: 100px;
+        height: 84px;
+    
+    }
+    .foot__boxMail{
+        margin: 6px 0 0 0;
+    }
+}
+
+
+
+
 /* the animatio frame */
 @keyframes moveSub{
     from{
