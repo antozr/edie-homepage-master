@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="http://www.edie.devchallenges.io.antoni-dumont.be/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/antozr/edie-homepage-master">
       Solution
     </a>
     <span> | </span>
