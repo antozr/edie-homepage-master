@@ -583,9 +583,7 @@ body{
 
 
 /* IPAD size */
-
-@media(min-width:1100px){
-
+@media(min-width:700px){
     .head__txt{
         font-size: 36px;
     }
@@ -628,8 +626,9 @@ body{
         transition: 0s;
         border-radius: 12px;
     }
-    /* the font */
-    .cont__txt{
+
+     /* the font */
+     .cont__txt{
         font-size: 18px;
         width: 36ch;
     }
@@ -697,9 +696,10 @@ body{
         width: 10ch;
         font-size: 24px;
     }
-    /* the box pack */
 
-    .cont__title--headPack{
+     /* the box pack */
+
+     .cont__title--headPack{
         margin: 0 0 0 5vw;
         line-height: 160%;
         width:13ch;
@@ -718,6 +718,7 @@ body{
         max-width: 1100px;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
 
     }
     .cont__boxPack{
@@ -730,8 +731,9 @@ body{
         font-size: 16px;
     }
 
-    /* projects*/
-    .cont--3{
+
+     /* projects*/
+     .cont--3{
         margin: 204px 0 0 0;
         padding: 0 0 0 9.8vw;
         width: calc(100% - 10.2vw);
@@ -778,6 +780,21 @@ body{
         position: relative;
         right: -70vw;
     }
+    .cont__title--boxPerso{
+        grid-area: t1;
+        margin: 0px 0 0 0;
+        width: 12ch;
+        font-size: 24px;
+    }
+}
+
+
+@media(min-width:1100px){
+
+   
+   
+   
+   
 
     /*contact*/
     .cont--contactRow{
